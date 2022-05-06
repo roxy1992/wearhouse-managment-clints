@@ -1,6 +1,7 @@
 [
     {
         "id": 1,
+        "quantity": 5,
         "name": "Samsung Galaxy A32",
         "price": "৳27,999",
         "description": "Awesome Black, Awesome White, Awesome Blue, Awesome Violet.",
@@ -8,6 +9,7 @@
     },
     {
         "id": 2,
+        "quantity": 5,
         "name": "Oppo F21 Pro",
         "price": "৳28,000.00",
         "description": "The Oppo K9 is now available in two variants (128/256/8GB RAM). Now, Oppo K9’s Price is BDT 28,000 Taka in Bangladesh.",
@@ -15,6 +17,7 @@
     },
     {
         "id": 3,
+        "quantity": 15,
         "name": "Honor X9",
         "price": "৳23,000.00",
         "description": "The Honor X9 is now available in one variant (128GB/8GB ROM/RAM). Now, Honor X9’s Price is 23000 to Taka in Bangladesh",
@@ -22,6 +25,7 @@
     },
     {
         "id": 4,
+        "quantity": 10,
         "name": "OnePlus 10R",
         "price": "৳40,000.00",
         "description": "OnePlus 10R is now available in two variants (128/256GB/8/12GB RAM). Now, the OnePlus 10R’s Price is 40000 taka in Bangladesh. ",
@@ -29,6 +33,7 @@
     },
     {
         "id": 5,
+        "quantity": 12,
         "name": "Realme Q5",
         "price": "৳35,000.00",
         "description": "Realme Q5 phone has a three-camera setup on the back. This formation consists of a 50MP wide, 2MP macro, and 2MP depth camera.",
@@ -36,6 +41,7 @@
     },
     {
         "id": 6,
+        "quantity": 12,
         "name": "Huawei P50E ",
         "price": "৳60,000.00",
         "description": "Huawei P50E is now available in three variants (8GB/128/256GB RAM). Now, Huawei P50E’s Price is 60000 in Bangladesh. ",
