@@ -1,6 +1,7 @@
 import { Route, Routes } from 'react-router-dom';
 import './App.css';
 import About from './Pages/About/About';
+import AddProduct from './Pages/AddProduct/AddProduct';
 import Blogs from './Pages/Blogs/Blogs';
 import Checkout from './Pages/Checkout/Checkout';
 import Home from './Pages/Home/Home/Home';
@@ -28,6 +29,11 @@ function App() {
         <Route path='checkout' element={
           <RequireAuth>
             <Checkout></Checkout>
+          </RequireAuth>
+        }></Route>
+        <Route path='addproduct' element={
+          <RequireAuth>
+            <AddProduct></AddProduct>
           </RequireAuth>
         }></Route>
       </Routes>
