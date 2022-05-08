@@ -6,7 +6,7 @@ const AddProduct = () => {
 
     const onSubmit = data => {
         console.log(data);
-        const url = `http://localhost:5000/service`;
+        const url = `https://gentle-springs-06548.herokuapp.com/service`;
         fetch(url, {
             method: 'POST',
             headers: {
