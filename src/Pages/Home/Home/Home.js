@@ -5,11 +5,11 @@ import Products from '../Products/Products';
 
 const Home = () => {
     return (
-        <div>
+        <div className='text-center' >
             <Banner></Banner>
             <Products></Products>
             <BestProducts></BestProducts>
-            {/* <button>More Inventory</button> */}
+            {/* <button className='btn btn-primary'>More Inventory</button> */}
         </div>
     );
 };

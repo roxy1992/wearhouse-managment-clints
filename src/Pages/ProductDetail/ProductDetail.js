@@ -15,11 +15,13 @@ const ProductDetail = () => {
     }, [])
 
     return (
-        <div>
-            <h2>You are about to book:{product.name} </h2>
+        <div >
             <div className='text-center'>
-                <Link to="/checkout">
-                    <button className='btn btn-primary'>Proceed Checkout</button>
+                <img src={product.img} alt="" />
+                <h2>{product.name} </h2>
+                <h4>Price : {product.price}</h4>
+                <Link to="/manageproducts">
+                    <button className='btn btn-primary'>Manage Product</button>
                 </Link>
             </div>
         </div>

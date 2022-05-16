@@ -1,0 +1,6 @@
+.home-container {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    margin: 50px;
+    border-image-width: 90px;
+}

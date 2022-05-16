@@ -1,9 +1,12 @@
 import React from 'react';
+import ManageProducts from '../ManageProducts/ManageProducts';
 
 const Checkout = () => {
     return (
-        <div>
-            <h2>Please Checkout your booking</h2>
+        <div className='text-center'>
+
+            <ManageProducts></ManageProducts>
+
         </div>
     );
 };

@@ -1,56 +1,22 @@
-import React, { useState } from 'react';
-import { Carousel } from 'react-bootstrap';
-
-import banner1 from '../../../images/banner/banner1.png';
-import banner2 from '../../../images/banner/banner2.png';
-import banner3 from '../../../images/banner/banner3.png';
+import React from 'react';
+import Images from '../../../images/banner/warehouse-1.jpg';
+import './Banner.css';
 
 const Banner = () => {
-    const [index, setIndex] = useState(0);
-
-    const handleSelect = (selectedIndex, e) => {
-        setIndex(selectedIndex);
-    };
     return (
-        <Carousel activeIndex={index} onSelect={handleSelect}>
-            <Carousel.Item>
-                <img
-                    className="d-block w-100"
-                    src={banner1}
-                    alt="First slide"
-                />
-                <Carousel.Caption>
-                    <h3>Best service</h3>
-                    <p>we provide best service</p>
-                </Carousel.Caption>
-            </Carousel.Item>
-            <Carousel.Item>
-                <img
-                    className="d-block w-100"
-                    src={banner2}
-                    alt="Second slide"
-                />
+        <div className='home-container'>
+            <div className='cont-container'>
 
-                <Carousel.Caption>
-                    <h3>Best Quality</h3>
-                    <p>we provide best quality</p>
-                </Carousel.Caption>
-            </Carousel.Item>
-            <Carousel.Item>
-                <img
-                    className="d-block w-100"
-                    src={banner3}
-                    alt="Third slide"
-                />
+                <h1>Mobile Warehouse </h1>
+                <p>Warehouse management and operations is a complex discipline that requires a combination of different levels to be successful. A warehouse management system (WMS) is often the standard platform used to centralize all warehousing processes. Other important areas of focus include warehouse control, warehouse supply and inventory management. Managing all of these functions can be a challenge for even the most discerning management team, so it is common for companies to consult with outside warehouse management companies and service providers.
 
-                <Carousel.Caption>
-                    <h3>Best Support</h3>
-                    <p>
-                        we provide best support
-                    </p>
-                </Carousel.Caption>
-            </Carousel.Item>
-        </Carousel>
+                    Warehouse labels equipped with warehouse storage space and signage solutions for streamlined activities or services that can help you optimize your warehouse management processes. We hope this will help you gain access to valuable resources that can help you improve your existing warehouse operations and reduce costs. The list is presented in a simple alphabetical order; Listed companies are not ranked or rated in any way.</p>
+            </div>
+            <div className='img-container'>
+                <img width={500} src={Images} alt="" />
+            </div>
+
+        </div>
     );
 };
 

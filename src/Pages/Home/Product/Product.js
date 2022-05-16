@@ -16,7 +16,7 @@ const Product = ({ product }) => {
             <p>Price: {price}</p>
             <p><small>{description}</small></p>
             <p>Stock: {quantity}</p>
-            <button onClick={() => navigateToServiceDetail(_id)} navigateToProductDetail className='btn btn-primary'>Buy: {name}</button>
+            <button onClick={() => navigateToServiceDetail(_id)} navigateToProductDetail className='btn btn-primary'>Update</button>
         </div>
     );
 };
