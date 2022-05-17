@@ -1,15 +1,13 @@
 import React, { useEffect, useState } from 'react';
-import { Button } from 'react-bootstrap';
-import { Link } from 'react-router-dom';
 import Product from '../Product/Product';
-import './Products.css';
 
-const Products = () => {
+
+const AllProducts = () => {
 
     const [products, setProducts] = useState([]);
 
     useEffect(() => {
-        fetch('http://localhost:5000/service')
+        fetch('http://localhost:5000/allservice')
             .then(res => res.json())
             .then(data => setProducts(data));
     }, [])
@@ -21,19 +19,20 @@ const Products = () => {
                 <div className="products-container">
                     {
                         products.map(product => <Product
+
                             key={product._id}
                             product={product}
                         >
+
                         </Product>)
+
                     }
                 </div>
             </div>
-            <div className='mt-2'>
-                <button variant="outline-primary"><Link to='/allproducts'>More Inventory</Link></button>
-
-            </div>
+            {/* <button className='btn btn-light mt-3'>More Inventory</button> */}
         </div>
-    );
+    )
 };
 
-export default Products;
+
+export default AllProducts;

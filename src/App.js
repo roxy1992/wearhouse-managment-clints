@@ -5,6 +5,7 @@ import AddProduct from './Pages/AddProduct/AddProduct';
 import Blogs from './Pages/Blogs/Blogs';
 import Checkout from './Pages/Checkout/Checkout';
 import Home from './Pages/Home/Home/Home';
+import AllProducts from './Pages/Home/Products/AllProducts';
 import Login from './Pages/Login/Login/Login';
 import Register from './Pages/Login/Register/Register';
 import RequireAuth from './Pages/Login/RequireAuth/RequireAuth';
@@ -25,8 +26,10 @@ function App() {
         <Route path='/about' element={<About></About>}></Route>
         <Route path='/blogs' element={<Blogs></Blogs>}></Route>
         <Route path='*' element={<NotFound></NotFound>}></Route>
-        <Route path='login' element={<Login></Login>}></Route>
-        <Route path='register' element={<Register></Register>}></Route>
+        <Route path='/login' element={<Login></Login>}></Route>
+        <Route path='/register' element={<Register></Register>}></Route>
+        <Route path='/allproducts' element={<AllProducts></AllProducts>}></Route>
+
         <Route path='checkout' element={
           <RequireAuth>
             <Checkout></Checkout>

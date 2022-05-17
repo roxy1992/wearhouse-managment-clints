@@ -24,10 +24,14 @@ const ManageProducts = () => {
             <h2 className='text-center'>Manage Your Product</h2>
             {
                 products.map(product => <div key={products.id}>
-                    <h5>{product.name} <button onClick={() => handleDelete(product._id)}>x</button></h5>
+
+
+                    <h3>{product.name} <button onClick={() => handleDelete(product._id)}>Delete</button></h3>
 
                 </div>)
             }
+
+
         </div>
     );
 };

@@ -15,11 +15,13 @@ const ProductDetail = () => {
     }, [])
 
     return (
-        <div >
+        <div className='container' >
             <div className='text-center'>
                 <img src={product.img} alt="" />
                 <h2>{product.name} </h2>
                 <h4>Price : {product.price}</h4>
+                <h5>{product.description}</h5>
+                <h4>Stock:{product.quantity}</h4>
                 <Link to="/manageproducts">
                     <button className='btn btn-primary'>Manage Product</button>
                 </Link>

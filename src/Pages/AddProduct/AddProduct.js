@@ -29,6 +29,7 @@ const AddProduct = () => {
                 <input className='mb-2' placeholder='Price' type="number" {...register("price")} />
                 <input className='mb-2' placeholder='Photo URL' type="text" {...register("img")} />
                 <input className='mb-2' placeholder='quantity' type="number" {...register("quantity")} />
+                <input className='mb-2' placeholder='supplier' type="text" {...register("supplier")} />
                 <input type="submit" value="Add Product" />
             </form>
         </div>
