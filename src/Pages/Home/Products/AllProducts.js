@@ -1,16 +1,11 @@
 import React, { useEffect, useState } from 'react';
 import Product from '../Product/Product';
+import GetService from '../../../Context/GetService';
 
 
 const AllProducts = () => {
 
-    const [products, setProducts] = useState([]);
-
-    useEffect(() => {
-        fetch('http://localhost:5000/allservice')
-            .then(res => res.json())
-            .then(data => setProducts(data));
-    }, [])
+    const [products] = GetService();
 
     return (
         <div className="card container" >
